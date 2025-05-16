@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.charger-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.charger-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.charger-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.charger-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.charger-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.dialog-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.dialog {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 300px;
+  width: 80%;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
